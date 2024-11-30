@@ -1,4 +1,4 @@
-@import 'normalize', 'fonts', 'variables', 'globals', 'utils';
+@import 'normalize', 'fonts', 'variables', 'globals', 'utils', 'media';
 
 @import './blocks/header', './blocks/content', './blocks/footer', './blocks/quote', './blocks/logo',
-  './blocks/question-forms', './blocks/info-bar';
+  './blocks/basis', './blocks/question-forms', './blocks/info-bar', './blocks/button';

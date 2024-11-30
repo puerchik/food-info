@@ -1,0 +1,27 @@
+.button {
+  padding: 4px 16px;
+  background-color: var(--color-dark-blue);
+  border: none;
+  border-radius: 4px;
+
+  color: var(--color-white);
+  font-family: 'Abel', sans-serif;
+  font-size: 15px;
+  line-height: 1.47;
+
+  &_gray {
+    background-color: var(--color-gray-alt);
+  }
+
+  &_black {
+    background-color: var(--color-dark);
+  }
+
+  &_pink {
+    background-color: var(--color-pink);
+  }
+
+  @include hover {
+    opacity: 0.7;
+  }
+}

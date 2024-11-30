@@ -1,0 +1,31 @@
+.basis {
+  background-color: var(--color-gray);
+  padding-top: 36px;
+  padding-bottom: 38px;
+  margin-bottom: 100px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__desc {
+    max-width: 300px;
+  }
+
+  &__title {
+    margin-bottom: 34px;
+
+    color: var(--color-dark);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  &__text {
+    max-width: 278px;
+    margin-bottom: 30px;
+
+    color: var(--color-dark);
+  }
+}

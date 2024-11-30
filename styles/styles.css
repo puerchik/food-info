@@ -130,6 +130,8 @@ svg * {
   --color-dark-blue: #364052;
   --color-light: #f2f2f2;
   --color-gray: #d1d5dc;
+  --color-gray-alt: #a1a1a1;
+  --color-pink: #e36592;
   --font-family-base: "Open Sans", sans-serif;
   --container-width: 1056px;
   --container-width-narrow: 1016px;
@@ -176,6 +178,7 @@ a {
   flex-direction: column;
   gap: 32px;
   padding-top: 80px;
+  padding-bottom: 84px;
   color: var(--color-dark);
 }
 .header__title {
@@ -250,4 +253,108 @@ a {
   font-size: 22px;
   font-weight: 700;
   line-height: 1.1;
+}
+
+.basis {
+  background-color: var(--color-gray);
+  padding-top: 36px;
+  padding-bottom: 38px;
+  margin-bottom: 100px;
+}
+.basis__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.basis__desc {
+  max-width: 300px;
+}
+.basis__title {
+  margin-bottom: 34px;
+  color: var(--color-dark);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+}
+.basis__text {
+  max-width: 278px;
+  margin-bottom: 30px;
+  color: var(--color-dark);
+}
+
+.question-forms__list {
+  display: flex;
+  gap: 8px;
+}
+
+.info-bar {
+  width: 100%;
+  max-width: 190px;
+  padding-block: 10px;
+}
+.info-bar__list {
+  display: flex;
+  flex-direction: column;
+}
+.info-bar__item {
+  position: relative;
+  padding-block: 1.16em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-bar__item::after, .info-bar__item_active::after {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 10px;
+  background: url("./../../images/icons/arrow-down.svg") center/contain no-repeat;
+}
+.info-bar__item_active::after {
+  background: url("./../../images/icons/arrow-up-active.svg") center/contain no-repeat;
+}
+.info-bar__item:not(:last-child) {
+  border-bottom: 1px solid var(--color-dark);
+}
+.info-bar__label {
+  color: var(--color-dark);
+  flex-grow: 1;
+  text-align: right;
+}
+.info-bar__input {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+}
+
+.button {
+  padding: 4px 16px;
+  background-color: var(--color-dark-blue);
+  border: none;
+  border-radius: 4px;
+  color: var(--color-white);
+  font-family: "Abel", sans-serif;
+  font-size: 15px;
+  line-height: 1.47;
+}
+.button_gray {
+  background-color: var(--color-gray-alt);
+}
+.button_black {
+  background-color: var(--color-dark);
+}
+.button_pink {
+  background-color: var(--color-pink);
+}
+@media (hover: hover) {
+  .button:hover {
+    opacity: 0.7;
+  }
+}
+@media (hover: none) {
+  .button:active {
+    opacity: 0.7;
+  }
 }/*# sourceMappingURL=styles.css.map */
