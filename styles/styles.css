@@ -132,6 +132,7 @@ svg * {
   --color-gray: #d1d5dc;
   --font-family-base: "Open Sans", sans-serif;
   --container-width: 1056px;
+  --container-width-narrow: 1016px;
   --container-padding-x: 20px;
   --transition-duration: 0.2s;
 }
@@ -165,6 +166,9 @@ a {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
   padding-inline: var(--container-padding-x);
+}
+.container_narrow {
+  max-width: calc(var(--container-width-narrow) + var(--container-padding-x) * 2);
 }
 
 .header {
