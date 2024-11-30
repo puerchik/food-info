@@ -127,10 +127,12 @@ svg * {
   --color-black: #000000;
   --color-white: #ffffff;
   --color-dark: #0c111d;
+  --color-dark-alt: #1a222f;
   --color-dark-blue: #364052;
   --color-light: #f2f2f2;
   --color-gray: #d1d5dc;
   --color-gray-alt: #a1a1a1;
+  --color-gray-light-blue: #9aa2b1;
   --color-pink: #e36592;
   --font-family-base: "Open Sans", sans-serif;
   --container-width: 1056px;
@@ -259,7 +261,6 @@ a {
   background-color: var(--color-gray);
   padding-top: 36px;
   padding-bottom: 38px;
-  margin-bottom: 100px;
 }
 .basis__wrapper {
   display: flex;
@@ -370,4 +371,64 @@ a {
   .button:active {
     opacity: 0.7;
   }
+}
+
+.nutrition {
+  padding-top: 39px;
+  padding-bottom: 8px;
+}
+.nutrition__title {
+  margin-bottom: 26px;
+  color: var(--color-dark);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.42;
+}
+.nutrition__desc {
+  margin-bottom: 100px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-dark);
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+}
+.nutrition__card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.card {
+  min-height: 290px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1);
+}
+.card__img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card__text-wrapper {
+  padding: 20px;
+  padding-top: 39px;
+}
+.card__title {
+  font-family: "Abel", sans-serif;
+  color: var(--color-dark-alt);
+  font-size: 20px;
+  line-height: 1.1;
+}
+.card__desc {
+  color: var(--color-gray-light-blue);
+  font-size: 18px;
+  line-height: 1.2;
+}
+.card__desc_narrow {
+  max-width: 85px;
+  word-wrap: break-word;
+}
+.card__desc_very-narrow {
+  max-width: 74px;
+  word-wrap: break-word;
 }/*# sourceMappingURL=styles.css.map */

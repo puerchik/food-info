@@ -1,0 +1,30 @@
+.nutrition {
+  padding-top: 39px;
+  padding-bottom: 8px;
+
+  &__title {
+    margin-bottom: 26px;
+
+    color: var(--color-dark);
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.42;
+  }
+
+  &__desc {
+    margin-bottom: 100px;
+
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-dark);
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+  }
+
+  &__card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+    column-gap: 20px;
+  }
+}

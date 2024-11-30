@@ -1,0 +1,38 @@
+.card {
+  min-height: 290px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1);
+
+  &__img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &__text-wrapper {
+    padding: 20px;
+    padding-top: 39px;
+  }
+
+  &__title {
+    font-family: 'Abel', sans-serif;
+    color: var(--color-dark-alt);
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  &__desc {
+    color: var(--color-gray-light-blue);
+    font-size: 18px;
+    line-height: 1.2;
+
+    &_narrow {
+      max-width: 85px;
+      word-wrap: break-word;
+    }
+
+    &_very-narrow {
+      max-width: 74px;
+      word-wrap: break-word;
+    }
+  }
+}
