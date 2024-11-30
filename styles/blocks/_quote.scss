@@ -1,0 +1,14 @@
+.quote {
+  text-align: right;
+  max-width: 358px;
+  align-self: flex-end;
+  margin-right: 110px;
+
+  &__text {
+    color: var(--color-dark-blue);
+  }
+
+  &__author {
+    color: var(--color-dark);
+  }
+}

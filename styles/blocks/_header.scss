@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 80px;
+
+  color: var(--color-dark);
+
+  &__title {
+    margin-bottom: 9px;
+
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.08;
+  }
+
+  &__subtitle {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    max-width: 953px;
+
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  &__title-quote-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

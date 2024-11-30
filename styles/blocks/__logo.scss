@@ -1,0 +1,20 @@
+.logo {
+  display: flex;
+  gap: 88px;
+
+  width: 100%;
+  max-width: 1256px;
+  padding: 34px 50px;
+  margin-inline: auto;
+
+  background-color: var(--color-light);
+  border-radius: 10px;
+
+  &__text {
+    color: var(--color-black);
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+}

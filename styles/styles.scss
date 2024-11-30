@@ -1,1 +1,3 @@
-@import 'normalize', 'fonts', 'variables', 'global', 'utils';
+@import 'normalize', 'fonts', 'variables', 'globals', 'utils';
+
+@import './blocks/header', './blocks/quote', './blocks/_logo';

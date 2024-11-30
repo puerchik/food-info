@@ -81,30 +81,132 @@ svg * {
   }
 }
 @font-face {
-  font-family: "Abel";
-  src: url("./../fonts/Abel-Regular.woff2") format("woff2");
+  font-family: "Open Sans";
+  src: url("./../fonts/OpenSans-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Comfortaa";
-  src: url("./../fonts/Comfortaa-Regular.woff2") format("woff2");
-  font-weight: normal;
+  font-family: "Open Sans";
+  src: url("./../fonts/OpenSans-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Abhaya Libre";
-  src: url("./../fonts/AbhayaLibre-ExtraBold.woff2") format("woff2");
+  font-family: "Open Sans";
+  src: url("./../fonts/OpenSans-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "ABeeZee";
-  src: url("./../fonts/ABeeZee-Regular.woff2") format("woff2");
-  font-weight: normal;
+  font-family: "Open Sans";
+  src: url("./../fonts/OpenSans-ExtraBold.woff2") format("woff2");
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
+}
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark: #0c111d;
+  --color-dark-blue: #364052;
+  --color-light: #f2f2f2;
+  --font-family-base: "Open Sans", sans-serif;
+  --container-width: 1056px;
+  --container-padding-x: 20px;
+  --transition-duration: 0.2s;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.375;
+  letter-spacing: 0;
+  color: var(--color-dark-blue);
+  background-color: var(--color-white);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 80px;
+  color: var(--color-dark);
+}
+.header__title {
+  margin-bottom: 9px;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.08;
+}
+.header__subtitle {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-transform: uppercase;
+}
+.header__desc {
+  max-width: 953px;
+  line-height: 1.25;
+  text-align: center;
+}
+.header__title-quote-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote {
+  text-align: right;
+  max-width: 358px;
+  align-self: flex-end;
+  margin-right: 110px;
+}
+.quote__text {
+  color: var(--color-dark-blue);
+}
+.quote__author {
+  color: var(--color-dark);
+}
+
+.logo {
+  display: flex;
+  gap: 88px;
+  width: 100%;
+  max-width: 1256px;
+  padding: 34px 50px;
+  margin-inline: auto;
+  background-color: var(--color-light);
+  border-radius: 10px;
+}
+.logo__text {
+  color: var(--color-black);
+  font-family: "Comfortaa", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.1;
 }/*# sourceMappingURL=styles.css.map */
