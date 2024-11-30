@@ -144,6 +144,8 @@ body {
   letter-spacing: 0;
   color: var(--color-dark-blue);
   background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
 }
 
 a,
@@ -194,6 +196,10 @@ a {
 .header__title-quote-wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.content {
+  flex-grow: 1;
 }
 
 .footer {
