@@ -130,6 +130,7 @@ svg * {
   --color-dark-alt: #1a222f;
   --color-dark-blue: #364052;
   --color-light: #f2f2f2;
+  --color-light-alt: #eaecf0;
   --color-gray: #d1d5dc;
   --color-gray-alt: #a1a1a1;
   --color-gray-light-blue: #9aa2b1;
@@ -431,4 +432,90 @@ a {
 .card__desc_very-narrow {
   max-width: 74px;
   word-wrap: break-word;
+}
+
+.popup-form {
+  max-width: 551px;
+  padding: 36px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1);
+}
+.popup-form__title {
+  padding: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--color-light-alt);
+  color: var(--color-black);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.popup-form__field-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-light-alt);
+}
+.popup-form__field-wrapper:last-of-type {
+  margin-bottom: 24px;
+}
+.popup-form__label {
+  padding: 10px;
+  padding-block: 14px;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--color-dark);
+}
+.popup-form__label-mandatory {
+  color: var(--color-pink);
+}
+.popup-form__input {
+  width: 100%;
+  max-width: 430px;
+  padding: 10px;
+  border: none;
+}
+.popup-form__textarea {
+  width: 100%;
+  min-height: 146px;
+  padding: 10px;
+  padding-block: 7px;
+  margin-bottom: 16px;
+  border: 1px solid var(--color-gray-light-blue);
+  resize: none;
+}
+.popup-form__textarea::-moz-placeholder {
+  color: var(--color-dark);
+  font-size: 18px;
+  line-height: 1.2;
+}
+.popup-form__textarea::placeholder {
+  color: var(--color-dark);
+  font-size: 18px;
+  line-height: 1.2;
+}
+.popup-form__warning {
+  margin-bottom: 20px;
+  color: var(--color-black);
+  font-size: 18px;
+  line-height: 1.2;
+}
+.popup-form__button {
+  padding: 10px 34px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  font-size: 15px;
+  line-height: 1.5;
+}
+@media (hover: hover) {
+  .popup-form__button:hover {
+    opacity: 0.7;
+  }
+}
+@media (hover: none) {
+  .popup-form__button:active {
+    opacity: 0.7;
+  }
 }/*# sourceMappingURL=styles.css.map */
