@@ -68,15 +68,34 @@
             <div class="basis__buttons question-forms">
               <ul class="question-forms__list">
                 <li class="question-forms__item">
-                  <button class="question-forms__button button button_gray" type="button">1</button>
+                  <button
+                    id="openFirstPopup"
+                    data-popup="popupBgFirst"
+                    class="question-forms__button button button_gray"
+                    type="button"
+                  >
+                    1
+                  </button>
                 </li>
                 <li class="question-forms__item">
-                  <button class="question-forms__button button button_black" type="button">
+                  <button
+                    id="openSecondPopup"
+                    data-popup="popupBgSecond"
+                    class="question-forms__button button button_black"
+                    type="button"
+                  >
                     2
                   </button>
                 </li>
                 <li class="question-forms__item">
-                  <button class="question-forms__button button button_pink" type="button">3</button>
+                  <button
+                    id="openThirdPopup"
+                    data-popup="popupBgThird"
+                    class="question-forms__button button button_pink"
+                    type="button"
+                  >
+                    3
+                  </button>
                 </li>
               </ul>
             </div>
@@ -241,26 +260,26 @@
         <p class="footer__copyright-text">Все права защищены</p>
       </div>
     </footer>
-    <div class="popup-bg" id="popupBg">
-      <div class="popup-form" id="popupForm">
+    <div class="popup-bg popup-hide" id="popupBgFirst">
+      <div class="popup-form">
         <h3 class="popup-form__title">ВОПРОС №1</h3>
         <form class="popup-form__form">
           <div class="popup-form__field-wrapper">
-            <label for="name" class="popup-form__label">
+            <label for="nameFirst" class="popup-form__label">
               Имя<span class="popup-form__label-mandatory">*</span>
             </label>
-            <input name="name" id="name" type="text" class="popup-form__input" />
+            <input name="name" id="nameFirst" type="text" class="popup-form__input" />
           </div>
           <div class="popup-form__field-wrapper">
-            <label for="topic" class="popup-form__label">
+            <label for="topicFirst" class="popup-form__label">
               Тема<span class="popup-form__label-mandatory">*</span>
             </label>
-            <input name="topic" id="topic" type="text" class="popup-form__input" />
+            <input name="topic" id="topicFirst" type="text" class="popup-form__input" />
           </div>
           <textarea
             placeholder="Сообщение"
             name="message"
-            id="message"
+            id="messageFirst"
             class="popup-form__textarea"
           ></textarea>
           <p class="popup-form__warning">
@@ -270,5 +289,64 @@
         </form>
       </div>
     </div>
+    <div class="popup-bg popup-hide" id="popupBgSecond">
+      <div class="popup-form">
+        <h3 class="popup-form__title">ВОПРОС №2</h3>
+        <form class="popup-form__form">
+          <div class="popup-form__field-wrapper">
+            <label for="nameSecond" class="popup-form__label">
+              Имя<span class="popup-form__label-mandatory">*</span>
+            </label>
+            <input name="name" id="nameSecond" type="text" class="popup-form__input" />
+          </div>
+          <div class="popup-form__field-wrapper">
+            <label for="topicSecond" class="popup-form__label">
+              Тема<span class="popup-form__label-mandatory">*</span>
+            </label>
+            <input name="topic" id="topicSecond" type="text" class="popup-form__input" />
+          </div>
+          <textarea
+            placeholder="Сообщение"
+            name="message"
+            id="messageSecond"
+            class="popup-form__textarea"
+          ></textarea>
+          <p class="popup-form__warning">
+            Сообщения, не соответствующие тематике, и спам - блокируются.
+          </p>
+          <button class="popup-form__button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <div class="popup-bg popup-hide" id="popupBgThird">
+      <div class="popup-form">
+        <h3 class="popup-form__title">ВОПРОС №3</h3>
+        <form class="popup-form__form">
+          <div class="popup-form__field-wrapper">
+            <label for="nameThird" class="popup-form__label">
+              Имя<span class="popup-form__label-mandatory">*</span>
+            </label>
+            <input name="name" id="nameThird" type="text" class="popup-form__input" />
+          </div>
+          <div class="popup-form__field-wrapper">
+            <label for="topicThird" class="popup-form__label">
+              Тема<span class="popup-form__label-mandatory">*</span>
+            </label>
+            <input name="topic" id="topicThird" type="text" class="popup-form__input" />
+          </div>
+          <textarea
+            placeholder="Сообщение"
+            name="message"
+            id="messageThird"
+            class="popup-form__textarea"
+          ></textarea>
+          <p class="popup-form__warning">
+            Сообщения, не соответствующие тематике, и спам - блокируются.
+          </p>
+          <button class="popup-form__button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
