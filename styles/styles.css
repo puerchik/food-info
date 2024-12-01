@@ -389,10 +389,10 @@ a {
   transform: translateY(-50%);
   width: 26px;
   height: 10px;
-  background: url("./../../images/icons/arrow-down.svg") center/contain no-repeat;
+  background: url("./../images/icons/arrow-down.svg") center/contain no-repeat;
 }
 .info-bar__item_active::after {
-  background: url("./../../images/icons/arrow-up-active.svg") center/contain no-repeat;
+  background: url("./../images/icons/arrow-up-active.svg") center/contain no-repeat;
 }
 .info-bar__item:not(:last-child) {
   border-bottom: 1px solid var(--color-dark);
