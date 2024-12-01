@@ -536,4 +536,35 @@ a {
 
 .popup-hide {
   display: none;
+}
+
+.popup-info {
+  position: absolute;
+  bottom: 0;
+  left: -445px;
+  width: 440px;
+  padding: 40px;
+  background-color: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1);
+}
+.popup-info__title {
+  position: relative;
+  margin-bottom: 44px;
+  color: var(--color-black);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.popup-info__title::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  left: 0;
+  bottom: -22px;
+  background-color: var(--color-black);
+}
+.popup-info__text {
+  color: var(--color-dark);
 }/*# sourceMappingURL=styles.css.map */
