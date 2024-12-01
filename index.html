@@ -241,5 +241,34 @@
         <p class="footer__copyright-text">Все права защищены</p>
       </div>
     </footer>
+    <div class="popup-bg" id="popupBg">
+      <div class="popup" id="popup">
+        <h3 class="popup__title">ВОПРОС №1</h3>
+        <form class="popup__form">
+          <div class="popup__field-wrapper">
+            <label for="name" class="popup__label">
+              Имя<span class="popup__label-mandatory">*</span>
+            </label>
+            <input name="name" id="name" type="text" class="popup__input" />
+          </div>
+          <div class="popup__field-wrapper">
+            <label for="topic" class="popup__label">
+              Тема<span class="popup__label-mandatory">*</span>
+            </label>
+            <input name="topic" id="topic" type="text" class="popup__input" />
+          </div>
+          <textarea
+            placeholder="Сообщение"
+            name="message"
+            id="message"
+            class="popup__textarea"
+          ></textarea>
+          <p class="popup__warning">
+            Сообщения, не соответствующие тематике, и спам - блокируются.
+          </p>
+          <button class="popup__button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
