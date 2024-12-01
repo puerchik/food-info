@@ -7,12 +7,20 @@
 
   color: var(--color-dark);
 
+  @include desktop-small {
+    padding-block: 30px;
+  }
+
   &__title {
     margin-bottom: 9px;
 
     font-size: 48px;
     font-weight: 800;
     line-height: 1.08;
+
+    @include desktop-small {
+      font-size: 39px;
+    }
   }
 
   &__subtitle {
@@ -22,6 +30,10 @@
     letter-spacing: 1px;
     word-spacing: 1px;
     text-transform: uppercase;
+
+    @include desktop-small {
+      font-size: 19px;
+    }
   }
 
   &__desc {
@@ -31,8 +43,16 @@
     text-align: center;
   }
 
+  &__logo {
+    padding-inline: 10px;
+  }
+
   &__title-quote-wrapper {
     display: flex;
     flex-direction: column;
+
+    @include desktop-small {
+      gap: 15px;
+    }
   }
 }

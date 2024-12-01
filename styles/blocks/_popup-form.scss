@@ -7,6 +7,14 @@
   background-color: var(--color-white);
   box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1);
 
+  @include mobile {
+    padding: 20px;
+  }
+
+  @include mobile-small {
+    padding: 10px;
+  }
+
   &__title {
     padding: 10px;
     padding-bottom: 19px;
@@ -17,6 +25,10 @@
     font-weight: 400;
     line-height: 1.2;
     text-transform: uppercase;
+
+    @include mobile-small {
+      font-size: 15px;
+    }
   }
 
   &__field-wrapper {
@@ -38,6 +50,10 @@
     line-height: 1.2;
     color: var(--color-dark);
 
+    @include mobile-small {
+      font-size: 15px;
+    }
+
     &-mandatory {
       color: var(--color-pink);
     }
@@ -48,6 +64,10 @@
     max-width: 430px;
     padding: 10px;
     border: none;
+
+    @include mobile-small {
+      font-size: 15px;
+    }
   }
 
   &__textarea {
@@ -62,6 +82,10 @@
       color: var(--color-dark);
       font-size: 18px;
       line-height: 1.2;
+
+      @include mobile-small {
+        font-size: 15px;
+      }
     }
   }
 
@@ -71,6 +95,10 @@
     color: var(--color-black);
     font-size: 18px;
     line-height: 1.2;
+
+    @include mobile-small {
+      font-size: 15px;
+    }
   }
 
   &__button {
@@ -90,6 +118,8 @@
 }
 
 .popup-bg {
+  z-index: 100;
+  padding-inline: 10px;
   position: fixed;
   top: 0;
   left: 0;

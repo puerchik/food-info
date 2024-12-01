@@ -6,10 +6,22 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
   }
 
   &__desc {
     max-width: 300px;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__title {
@@ -19,6 +31,10 @@
     font-size: 36px;
     font-weight: 600;
     line-height: 1;
+
+    @include mobile {
+      text-align: center;
+    }
   }
 
   &__text {
@@ -26,5 +42,9 @@
     margin-bottom: 30px;
 
     color: var(--color-dark);
+
+    @include mobile {
+      text-align: center;
+    }
   }
 }

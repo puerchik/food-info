@@ -1,8 +1,17 @@
 .quote {
-  text-align: right;
-  max-width: 358px;
   align-self: flex-end;
+  max-width: 358px;
   margin-right: 110px;
+
+  text-align: right;
+
+  @include desktop-small {
+    align-self: flex-start;
+    margin-right: 0;
+
+    font-size: 15px;
+    text-align: left;
+  }
 
   &__text {
     color: var(--color-dark-blue);

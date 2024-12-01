@@ -9,6 +9,10 @@
     font-size: 36px;
     font-weight: 800;
     line-height: 1.42;
+
+    @include desktop-small {
+      font-size: 31px;
+    }
   }
 
   &__desc {
@@ -19,6 +23,10 @@
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: 0.04em;
+
+    @include desktop-small {
+      font-size: 18px;
+    }
   }
 
   &__card-list {
@@ -26,5 +34,13 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 50px;
     column-gap: 20px;
+
+    @include desktop {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
   }
 }

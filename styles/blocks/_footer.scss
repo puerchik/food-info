@@ -11,6 +11,10 @@
     &-text {
       font-family: 'Abel', 'Open Sans', sans-serif;
       color: var(--color-dark);
+
+      @include mobile {
+        font-size: 14px;
+      }
     }
   }
 }
